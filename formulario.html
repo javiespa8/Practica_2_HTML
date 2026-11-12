@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="icon" href="img_original/favicon.png" type="image/x-icon">
+    </head>
+    <body style="font-family: monospace;">
+        <header>
+            <h1><em><u>Formulario</u></em></h1>
+        </header>
+        <main>
+            <form action="https://formspree.io/f/xgakvvwr" method="post">
+                <label for="email" style="background-color: aqua;">Correo electrónico (Obligatorio):</label>  
+                    <input type="email" id="email" name="email" required/><br><br>
+                 
+                <label for="conceptos" style="background-color: aqua;">Elige un concepto:</label>
+                    <select id="conceptos" name="conceptos">
+                        <option value="Listas">listas</option>
+                        <option value="enlaces">Enlaces</option>
+                        <option value="formularios">Formularios</option>
+                        <option value="etiquetas">etiquetas</option>
+                        <option value="imagenes">Imágenes</option>
+                    </select>
+
+                <p style="background-color: aqua;">Que dificultad ha tenido este concepto para ti:</p>
+                
+                <label>
+                    <input type="radio" name="Dificultad" value="Dificil"/>Dificil<br>
+                </label>
+                <label>
+                    <input type="radio" name="Dificultad" value="Larga"/>Difícil no, pero un poco larga sí<br>
+                </label>
+                <label>
+                    <input type="radio" name="Dificultad" value="Normal"/>Normal<br>
+                </label>
+                <label>
+                    <input type="radio" name="Dificultad" value="Facil"/>Fácil<br>
+                </label>
+                <label>
+                    <input type="radio" name="Dificultad"value="Pan_Comido"/>Pan comido
+                </label><br><br>
+                    
+                <table width="80%">
+                    <tr>
+                        <td>
+                            <input type="submit" id="enviar" value="Enviar Formulario"/>
+                        </td>
+                        <td>
+                            <input type="reset" id="Resetear" value="Resetear"/>
+                        </td>
+                    </tr>
+                </table>
+            </form><br><br><br>
+        </main>
+        <footer style="text-align: center; background-color: aquamarine;">
+            <p>Práctica de Lenguaje de Marcas - Creado por Javier Español</p>
+        </footer>
+        <a href="index.html" style="position: fixed; bottom: 20px; right: 20px; background: white; border: 1px solid #1403fc; padding: 10px; border-radius: 50%; z-index: 9999 ";><img src="img_original/casa_inicio.png" width="60" height="auto"></a>
+    </body>
+</html>
